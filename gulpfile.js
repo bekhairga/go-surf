@@ -5,7 +5,9 @@ let gulp = require('gulp'),
   concat = require('gulp-concat'),
   rename = require('gulp-rename'),
   del = require('del'),
-  autoprefixer = require('gulp-autoprefixer');
+  autoprefixer = require('gulp-autoprefixer'),
+  babel = require('gulp-babel'),
+  plumber = require('gulp-plumber');
 
 
 gulp.task('clean', async function () {
@@ -28,6 +30,7 @@ gulp.task('css', function () {
     'node_modules/normalize.css/normalize.css',
     'node_modules/slick-carousel/slick/slick.css',
     'node_modules/animate.css/animate.css',
+    'node_modules/menu/hamburgers.css',
   ])
     .pipe(concat('_libs.scss'))
     .pipe(gulp.dest('app/scss'))
@@ -46,8 +49,11 @@ gulp.task('script', function () {
 
 gulp.task('js', function () {
   return gulp.src([
-    'node_modules/slick-carousel/slick/slick.js'
+    'node_modules/slick-carousel/slick/slick.js',
   ])
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('app/js'))

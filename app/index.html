@@ -13,7 +13,28 @@
 
 <body>
   <header class="header">
-    <div class="header__title">go surf</div>
+    <div class="menu__hamburger">
+      <button class="hamburger hamburger--spin " type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+
+    <nav class="menu menu-mini">
+      <ul class="menu__list">
+        <li><a href="#"><img src="img/surf-mini.svg" alt="surf-logo"><span>Surf</span></a></li>
+        <li><a href="#"><img src="img/travel-mini.svg" alt="holder-logo"><span>holder</span></a></li>
+        <li><a href="#"><img src="img/camp-mini.svg" alt="camp-logo"><span>Sleep</span></a></li>
+        <li><a href="#"><img src="img/board-mini.svg" alt="board-logo"><span>Shop</span></a></li>
+      </ul>
+    </nav>
+    <a class="mburger" href="#my-menu" mburger mburger--collapse">
+      <b></b>
+      <b></b>
+      <b></b>
+    </a>
+    <div class="header__title">go <span>surf</span></div>
     <div class="header__arrows">
       <a href="#" class="animated fadeInDown infinite">
         <img src="img/down-double-arrow.svg" alt="arrows">
@@ -59,26 +80,28 @@
           <img src="img/logo.svg" alt="logo-serf">
         </a>
       </div>
-      <nav class="menu">
+      <nav class="menu" id="my-menu">
         <ul class="menu__list">
           <li><a href="#"><img src="img/surf.svg" alt="surf-logo"><span>Surf</span></a></li>
-          <li><a href="#"><img src="img/travel.svg" alt="travel-logo"><span>Travel</span></a></li>
+          <li><a href="#"><img src="img/travel.svg" alt="holder-logo"><span>holder</span></a></li>
           <li><a href="#"><img src="img/camp.svg" alt="camp-logo"><span>Sleep</span></a></li>
           <li><a href="#"><img src="img/board.svg" alt="board-logo"><span>Shop</span></a></li>
         </ul>
       </nav>
-      <div class="header__search">
-        <img src="img/search.svg" alt="search-ico">
-      </div>
-      <div class="header__date">
-        20 <span>06 | 2018</span>
-      </div>
-      <div class="header__location">
-        California
+      <div class="naving">
+        <div class="header__search">
+          <img src="img/search.svg" alt="search-ico">
+        </div>
+        <div class="header__date">
+          20 <span>06 | 2018</span>
+        </div>
+        <div class="header__location">
+          California
+        </div>
       </div>
     </div>
     <div class="header__slider">
-      <div class="header__slider-item slider-item">
+      <div class="header__slider-item slider-item header__slider-first-item">
         <div class="slider-item__info">
           <div class="slider-item__info-suptitle headline-left">Surf</div>
           <div class="slider-item__info-title">North Shore</div>
@@ -89,7 +112,7 @@
           </a>
         </div>
       </div>
-      <div class="header__slider-item slider-item">
+      <div class="header__slider-item slider-item header__slider-second-item">
         <div class="slider-item__info">
           <div class="slider-item__info-suptitle headline-left">Surf</div>
           <div class="slider-item__info-title">South Shore</div>
@@ -100,7 +123,7 @@
           </a>
         </div>
       </div>
-      <div class="header__slider-item slider-item">
+      <div class="header__slider-item slider-item header__slider-third-item">
         <div class="slider-item__info">
           <div class="slider-item__info-suptitle headline-left">Surf</div>
           <div class="slider-item__info-title">West Shore</div>
@@ -111,7 +134,7 @@
           </a>
         </div>
       </div>
-      <div class="header__slider-item slider-item">
+      <div class="header__slider-item slider-item header__slider-fourth-item">
         <div class="slider-item__info">
           <div class="slider-item__info-suptitle headline-left">Surf</div>
           <div class="slider-item__info-title">East Shore</div>
@@ -151,6 +174,7 @@
     </div>
   </header>
   <div class="container">
+    
     <section class="surf">
       <div class="title">
         <span>
@@ -167,6 +191,291 @@
           </div>
         </div>
       </div>
+      <section class="island__data">
+        <div class="island__slider">
+          <div class="island-dots__content">
+            <div class="islands-dots__content-row">
+              <div class="islands-dots__content-head">
+                <div class="islands-dots__content-title">Airlie Beach</div>
+                <div class="islands-dots__content-subtitle">Australia</div>
+              </div>
+              <a href="#" class="islands-dots__content-link">
+                <img src="img/upward.svg" alt="link forward">
+              </a>
+            </div>
+            <div class="islands-dots__content-row">
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img src="img/surf-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">9 - 13</div>
+                <div class="islands-dots__content-name">Surf (FT)</div>
+              </div>
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img class="wind-icon__img" src="img/wind-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">+2.3</div>
+                <div class="islands-dots__content-name">TIDE (FT)</div>
+              </div>
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img src="img/surf-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">4 SE</div>
+                <div class="islands-dots__content-name">WIND (KTS)</div>
+              </div>
+      
+            </div>
+          </div>
+          <div class="island-dots__content">
+            <div class="islands-dots__content-row">
+              <div class="islands-dots__content-head">
+                <div class="islands-dots__content-title">Blue Beach</div>
+                <div class="islands-dots__content-subtitle">Australia</div>
+              </div>
+              <a href="#" class="islands-dots__content-link">
+                <img src="img/upward.svg" alt="link forward">
+              </a>
+            </div>
+            <div class="islands-dots__content-row">
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img src="img/surf-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">10 - 14</div>
+                <div class="islands-dots__content-name">Surf (FT)</div>
+              </div>
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img class="wind-icon__img" src="img/wind-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">+3</div>
+                <div class="islands-dots__content-name">TIDE (FT)</div>
+              </div>
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img src="img/surf-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">5 SE</div>
+                <div class="islands-dots__content-name">WIND (KTS)</div>
+              </div>
+      
+            </div>
+          </div>
+          <div class="island-dots__content">
+            <div class="islands-dots__content-row">
+              <div class="islands-dots__content-head">
+                <div class="islands-dots__content-title">Seagrass Bay</div>
+                <div class="islands-dots__content-subtitle">Singapoure</div>
+              </div>
+              <a href="#" class="islands-dots__content-link">
+                <img src="img/upward.svg" alt="link forward">
+              </a>
+            </div>
+            <div class="islands-dots__content-row">
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img src="img/surf-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">11 - 13</div>
+                <div class="islands-dots__content-name">Surf (FT)</div>
+              </div>
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img class="wind-icon__img" src="img/wind-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">+2.5</div>
+                <div class="islands-dots__content-name">TIDE (FT)</div>
+              </div>
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img src="img/surf-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">3 SE</div>
+                <div class="islands-dots__content-name">WIND (KTS)</div>
+              </div>
+      
+            </div>
+          </div>
+          <div class="island-dots__content">
+            <div class="islands-dots__content-row">
+              <div class="islands-dots__content-head">
+                <div class="islands-dots__content-title">Bathsheba Beach</div>
+                <div class="islands-dots__content-subtitle">Barbados</div>
+              </div>
+              <a href="#" class="islands-dots__content-link">
+                <img src="img/upward.svg" alt="link forward">
+              </a>
+            </div>
+            <div class="islands-dots__content-row">
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img src="img/surf-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">9 - 13</div>
+                <div class="islands-dots__content-name">Surf (FT)</div>
+              </div>
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img class="wind-icon__img" src="img/wind-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">+2.4</div>
+                <div class="islands-dots__content-name">TIDE (FT)</div>
+              </div>
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img src="img/surf-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">4 SE</div>
+                <div class="islands-dots__content-name">WIND (KTS)</div>
+              </div>
+      
+            </div>
+          </div>
+          <div class="island-dots__content">
+            <div class="islands-dots__content-row">
+              <div class="islands-dots__content-head">
+                <div class="islands-dots__content-title">Sunset Beach</div>
+                <div class="islands-dots__content-subtitle">Hawaii</div>
+              </div>
+              <a href="#" class="islands-dots__content-link">
+                <img src="img/upward.svg" alt="link forward">
+              </a>
+            </div>
+            <div class="islands-dots__content-row">
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img src="img/surf-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">8 - 13</div>
+                <div class="islands-dots__content-name">Surf (FT)</div>
+              </div>
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img class="wind-icon__img" src="img/wind-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">+2</div>
+                <div class="islands-dots__content-name">TIDE (FT)</div>
+              </div>
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img src="img/surf-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">4 SE</div>
+                <div class="islands-dots__content-name">WIND (KTS)</div>
+              </div>
+      
+            </div>
+          </div>
+          <div class="island-dots__content">
+            <div class="islands-dots__content-row">
+              <div class="islands-dots__content-head">
+                <div class="islands-dots__content-title">Banana Beach</div>
+                <div class="islands-dots__content-subtitle">Thailand</div>
+              </div>
+              <a href="#" class="islands-dots__content-link">
+                <img src="img/upward.svg" alt="link forward">
+              </a>
+            </div>
+            <div class="islands-dots__content-row">
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img src="img/surf-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">9 - 13</div>
+                <div class="islands-dots__content-name">Surf (FT)</div>
+              </div>
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img class="wind-icon__img" src="img/wind-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">+2.3</div>
+                <div class="islands-dots__content-name">TIDE (FT)</div>
+              </div>
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img src="img/surf-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">4 SE</div>
+                <div class="islands-dots__content-name">WIND (KTS)</div>
+              </div>
+      
+            </div>
+          </div>
+          <div class="island-dots__content">
+            <div class="islands-dots__content-row">
+              <div class="islands-dots__content-head">
+                <div class="islands-dots__content-title">Siasconset Beach</div>
+                <div class="islands-dots__content-subtitle">MA</div>
+              </div>
+              <a href="#" class="islands-dots__content-link">
+                <img src="img/upward.svg" alt="link forward">
+              </a>
+            </div>
+            <div class="islands-dots__content-row">
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img src="img/surf-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">10 - 13</div>
+                <div class="islands-dots__content-name">Surf (FT)</div>
+              </div>
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img class="wind-icon__img" src="img/wind-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">+3.3</div>
+                <div class="islands-dots__content-name">TIDE (FT)</div>
+              </div>
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img src="img/surf-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">4 SE</div>
+                <div class="islands-dots__content-name">WIND (KTS)</div>
+              </div>
+      
+            </div>
+          </div>
+          <div class="island-dots__content">
+            <div class="islands-dots__content-row">
+              <div class="islands-dots__content-head">
+                <div class="islands-dots__content-title">Honopu Beach</div>
+                <div class="islands-dots__content-subtitle">HI</div>
+              </div>
+              <a href="#" class="islands-dots__content-link">
+                <img src="img/upward.svg" alt="link forward">
+              </a>
+            </div>
+            <div class="islands-dots__content-row">
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img src="img/surf-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">9 - 13</div>
+                <div class="islands-dots__content-name">Surf (FT)</div>
+              </div>
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img class="wind-icon__img" src="img/wind-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">+1.3</div>
+                <div class="islands-dots__content-name">TIDE (FT)</div>
+              </div>
+              <div class="islands-dots__content-item">
+                <div class="island-item__image">
+                  <img src="img/surf-icon.svg" alt="surf-icon">
+                </div>
+                <div class="islands-dots__content-number">5 SE</div>
+                <div class="islands-dots__content-name">WIND (KTS)</div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      
+      </section>
       <div class="slider-map">
         <div class="slider-dots--1 slider-dots">
           <div class="slider-dots__circle"></div>
@@ -188,7 +497,7 @@
                 <div class="slider-dots__content-name">Surf (FT)</div>
               </div>
               <div class="slider-dots__content-item">
-                <img src="img/wind-icon.svg" alt="surf-icon">
+                <img class="wind-icon__img" src="img/wind-icon.svg" alt="surf-icon">
                 <div class="slider-dots__content-number">+2.3</div>
                 <div class="slider-dots__content-name">TIDE (FT)</div>
               </div>
@@ -221,7 +530,7 @@
                 <div class="slider-dots__content-name">Surf (FT)</div>
               </div>
               <div class="slider-dots__content-item">
-                <img src="img/wind-icon.svg" alt="surf-icon">
+                <img class="wind-icon__img" src="img/wind-icon.svg" alt="surf-icon">
                 <div class="slider-dots__content-number">+2.3</div>
                 <div class="slider-dots__content-name">TIDE (FT)</div>
               </div>
@@ -254,7 +563,7 @@
                 <div class="slider-dots__content-name">Surf (FT)</div>
               </div>
               <div class="slider-dots__content-item">
-                <img src="img/wind-icon.svg" alt="surf-icon">
+                <img class="wind-icon__img" src="img/wind-icon.svg" alt="surf-icon">
                 <div class="slider-dots__content-number">+2.3</div>
                 <div class="slider-dots__content-name">TIDE (FT)</div>
               </div>
@@ -287,7 +596,7 @@
                 <div class="slider-dots__content-name">Surf (FT)</div>
               </div>
               <div class="slider-dots__content-item">
-                <img src="img/wind-icon.svg" alt="surf-icon">
+                <img class="wind-icon__img" src="img/wind-icon.svg" alt="surf-icon">
                 <div class="slider-dots__content-number">+2.3</div>
                 <div class="slider-dots__content-name">TIDE (FT)</div>
               </div>
@@ -320,7 +629,7 @@
                 <div class="slider-dots__content-name">Surf (FT)</div>
               </div>
               <div class="slider-dots__content-item">
-                <img src="img/wind-icon.svg" alt="surf-icon">
+                <img class="wind-icon__img" src="img/wind-icon.svg" alt="surf-icon">
                 <div class="slider-dots__content-number">+2.3</div>
                 <div class="slider-dots__content-name">TIDE (FT)</div>
               </div>
@@ -353,7 +662,7 @@
                 <div class="slider-dots__content-name">Surf (FT)</div>
               </div>
               <div class="slider-dots__content-item">
-                <img src="img/wind-icon.svg" alt="surf-icon">
+                <img class="wind-icon__img" src="img/wind-icon.svg" alt="surf-icon">
                 <div class="slider-dots__content-number">+2.3</div>
                 <div class="slider-dots__content-name">TIDE (FT)</div>
               </div>
@@ -386,7 +695,7 @@
                 <div class="slider-dots__content-name">Surf (FT)</div>
               </div>
               <div class="slider-dots__content-item">
-                <img src="img/wind-icon.svg" alt="surf-icon">
+                <img class="wind-icon__img" src="img/wind-icon.svg" alt="surf-icon">
                 <div class="slider-dots__content-number">+2.3</div>
                 <div class="slider-dots__content-name">TIDE (FT)</div>
               </div>
@@ -419,7 +728,7 @@
                 <div class="slider-dots__content-name">Surf (FT)</div>
               </div>
               <div class="slider-dots__content-item">
-                <img src="img/wind-icon.svg" alt="surf-icon">
+                <img class="wind-icon__img" src="img/wind-icon.svg" alt="surf-icon">
                 <div class="slider-dots__content-number">+2.3</div>
                 <div class="slider-dots__content-name">TIDE (FT)</div>
               </div>
@@ -438,130 +747,154 @@
 
 
       <div class="surf-slider">
-        <div class="surf-box" style=" background-image: url(../img/content-1.png);">
-          <div class="surf-box__inner">
-            <div class="surf-box__inner-title">
-              Malibu Beach
-            </div>
-            <div class="surf-box__inner-location">
-              California <span>|</span> USA
-            </div>
-            <div class="btn-box">
-              <a class="btn" href="#">
-                view <span>surf</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="surf-box" style=" background-image: url(../img/content-2.png);">
-          <div class="surf-box__inner">
-            <div class="surf-box__inner-title">
-              Airlie Beach
-            </div>
-            <div class="surf-box__inner-location">
-              Queensland <span>|</span> Australia
-            </div>
-            <div class="btn-box">
-              <a class="btn" href="#">
-                view <span>surf</span>
-              </a>
+        <div class="surf-box">
+          <div class="surf-box__wrapper" style=" background-image: url(../img/content-1.png);">
+
+            <div class="surf-box__inner">
+              <div class="surf-box__inner-title">
+                Malibu Beach
+              </div>
+              <div class="surf-box__inner-location">
+                California <span>|</span> USA
+              </div>
+              <div class="btn-box">
+                <a class="btn" href="#">
+                  view <span>surf</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="surf-box" style=" background-image: url(../img/content-3.png);">
-          <div class="surf-box__inner">
-            <div class="surf-box__inner-title">
-              Clound Mine
-            </div>
-            <div class="surf-box__inner-location">
-              Siargao <span>|</span> Philippines
-            </div>
-            <div class="btn-box">
-              <a class="btn" href="#">
-                view <span>surf</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="surf-box" style=" background-image: url(../img/content-4.png);">
-          <div class="surf-box__inner">
-            <div class="surf-box__inner-title">
-              Vieux Boucau
-            </div>
-            <div class="surf-box__inner-location">
-              Hossegor <span>|</span> France
-            </div>
-            <div class="btn-box">
-              <a class="btn" href="#">
-                view <span>surf</span>
-              </a>
+        <div class="surf-box">
+          <div class="surf-box__wrapper" style=" background-image: url(../img/content-2.png);">
+
+            <div class="surf-box__inner">
+              <div class="surf-box__inner-title">
+                Airlie Beach
+              </div>
+              <div class="surf-box__inner-location">
+                Queensland <span>|</span> Australia
+              </div>
+              <div class="btn-box">
+                <a class="btn" href="#">
+                  view <span>surf</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="surf-box" style=" background-image: url(../img/content-1.png);">
-          <div class="surf-box__inner">
-            <div class="surf-box__inner-title">
-              Malibu Beach
-            </div>
-            <div class="surf-box__inner-location">
-              California<span>|</span> USA
-            </div>
-            <div class="btn-box">
-              <a class="btn" href="#">
-                view <span>surf</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="surf-box" style=" background-image: url(../img/content-2.png);">
-          <div class="surf-box__inner">
-            <div class="surf-box__inner-title">
-              Airlie Beach
-            </div>
-            <div class="surf-box__inner-location">
-              Queensland <span>|</span> Australia
-            </div>
-            <div class="btn-box">
-              <a class="btn" href="#">
-                view <span>surf</span>
-              </a>
+        <div class="surf-box">
+          <div class="surf-box__wrapper"  style=" background-image: url(../img/content-3.png);">
+
+            <div class="surf-box__inner">
+              <div class="surf-box__inner-title">
+                Clound Mine
+              </div>
+              <div class="surf-box__inner-location">
+                Siargao <span>|</span> Philippines
+              </div>
+              <div class="btn-box">
+                <a class="btn" href="#">
+                  view <span>surf</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="surf-box" style=" background-image: url(../img/content-3.png);">
-          <div class="surf-box__inner">
-            <div class="surf-box__inner-title">
-              Clound Mine
-            </div>
-            <div class="surf-box__inner-location">
-              Siargao <span>|</span> Philippines
-            </div>
-            <div class="btn-box">
-              <a class="btn" href="#">
-                view <span>surf</span>
-              </a>
+        <div class="surf-box">
+          <div class="surf-box__wrapper" style=" background-image: url(../img/content-4.png);">
+
+            <div class="surf-box__inner">
+              <div class="surf-box__inner-title">
+                Vieux Boucau
+              </div>
+              <div class="surf-box__inner-location">
+                Hossegor <span>|</span> France
+              </div>
+              <div class="btn-box">
+                <a class="btn" href="#">
+                  view <span>surf</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="surf-box" style="background-image: url(../img/content-4.png);">
-          <div class="surf-box__inner">
-            <div class="surf-box__inner-title">
-              Vieux Boucau
+        <div class="surf-box">
+          <div class="surf-box__wrapper" style=" background-image: url(../img/content-1.png);">
+        
+            <div class="surf-box__inner">
+              <div class="surf-box__inner-title">
+                Malibu Beach
+              </div>
+              <div class="surf-box__inner-location">
+                California <span>|</span> USA
+              </div>
+              <div class="btn-box">
+                <a class="btn" href="#">
+                  view <span>surf</span>
+                </a>
+              </div>
             </div>
-            <div class="surf-box__inner-location">
-              Hossegor <span>|</span> France
+          </div>
+        </div>
+        <div class="surf-box">
+          <div class="surf-box__wrapper" style=" background-image: url(../img/content-2.png);">
+        
+            <div class="surf-box__inner">
+              <div class="surf-box__inner-title">
+                Airlie Beach
+              </div>
+              <div class="surf-box__inner-location">
+                Queensland <span>|</span> Australia
+              </div>
+              <div class="btn-box">
+                <a class="btn" href="#">
+                  view <span>surf</span>
+                </a>
+              </div>
             </div>
-            <div class="btn-box">
-              <a class="btn" href="#">
-                view <span>surf</span>
-              </a>
+          </div>
+        </div>
+        <div class="surf-box">
+          <div class="surf-box__wrapper" style=" background-image: url(../img/content-3.png);">
+        
+            <div class="surf-box__inner">
+              <div class="surf-box__inner-title">
+                Clound Mine
+              </div>
+              <div class="surf-box__inner-location">
+                Siargao <span>|</span> Philippines
+              </div>
+              <div class="btn-box">
+                <a class="btn" href="#">
+                  view <span>surf</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="surf-box" >
+          <div class="surf-box__wrapper"style=" background-image: url(../img/content-4.png);">
+        
+            <div class="surf-box__inner">
+              <div class="surf-box__inner-title">
+                Vieux Boucau
+              </div>
+              <div class="surf-box__inner-location">
+                Hossegor <span>|</span> France
+              </div>
+              <div class="btn-box">
+                <a class="btn" href="#">
+                  view <span>surf</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
       </div>
     </section>
-    <section class="travel">
+    <!-- <section class="holder">
       <div class="container">
         <div class="title">
           <span>
@@ -569,17 +902,17 @@
             <h3>travel</h3>
           </span>
         </div>
-        <div class="travel__slider">
-          <div class="travel__slider-item travel-slider">
-            <div class="travel-slider__head" style="background-image: url(../img/travel-image.png);">
-              <div class="travel-slider__subtitle">
+        <div class="holder__slider">
+          <div class="holder__slider-item holder-slider">
+            <div class="holder-slider__head" style="background-image: url(../img/travel-image.png);">
+              <div class="holder-slider__subtitle">
                 <div class="subtitle">
                   <div class="headline-left">Shore</div>
                   <div class="subtitle__head">Airlie Beach <span>|</span> Australia</div>
                 </div>
               </div>
             </div>
-            <div class="travel-slider__descr" style="background-image: url(../img/virgin-airplane.png);">
+            <div class="holder-slider__descr" style="background-image: url(../img/virgin-airplane.png);">
 
 
               <div class=" descr">
@@ -587,43 +920,43 @@
                 <div class="descr__head">Virgin Australia <img src="img/virgin-logo.svg" alt="virgin-logo"></div>
               </div>
             </div>
-            <div class="travel-slider__info">
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Destination</div>
-                <div class="travel-slider__info-title">Queensland Australia</div>
+            <div class="holder-slider__info">
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Destination</div>
+                <div class="holder-slider__info-title">Queensland Australia</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Distance</div>
-                <div class="travel-slider__info-title">7,065 Miles</div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Distance</div>
+                <div class="holder-slider__info-title">7,065 Miles</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Travel Time</div>
-                <div class="travel-slider__info-title">23 Hours 5 Minutes</div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Travel Time</div>
+                <div class="holder-slider__info-title">23 Hours 5 Minutes</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Pricing</div>
-                <div class="travel-slider__info-title">$1,976 USD
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Pricing</div>
+                <div class="holder-slider__info-title">$1,976 USD
                   <span>Round Trip</span>
                 </div>
               </div>
             </div>
-            <div class="travel-slider__btn">
+            <div class="holder-slider__btn">
               <a href="#" class="btn">
                 book <span>flight</span>
               </a>
             </div>
 
           </div>
-          <div class="travel__slider-item travel-slider">
-            <div class="travel-slider__head" style="background-image: url(../img/travel-image.png);">
-              <div class="travel-slider__subtitle">
+          <div class="holder__slider-item holder-slider">
+            <div class="holder-slider__head" style="background-image: url(../img/travel-image.png);">
+              <div class="holder-slider__subtitle">
                 <div class="subtitle">
                   <div class="headline-left">Shore</div>
                   <div class="subtitle__head">Airlie Beach <span>|</span> Australia</div>
                 </div>
               </div>
             </div>
-            <div class="travel-slider__descr" style="background-image: url(../img/virgin-airplane.png);">
+            <div class="holder-slider__descr" style="background-image: url(../img/virgin-airplane.png);">
 
 
               <div class=" descr">
@@ -631,43 +964,43 @@
                 <div class="descr__head">Virgin Australia <img src="img/virgin-logo.svg" alt="virgin-logo"></div>
               </div>
             </div>
-            <div class="travel-slider__info">
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Destination</div>
-                <div class="travel-slider__info-title">Queensland Australia</div>
+            <div class="holder-slider__info">
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Destination</div>
+                <div class="holder-slider__info-title">Queensland Australia</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Distance</div>
-                <div class="travel-slider__info-title">7,065 Miles</div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Distance</div>
+                <div class="holder-slider__info-title">7,065 Miles</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Travel Time</div>
-                <div class="travel-slider__info-title">23 Hours 5 Minutes</div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Travel Time</div>
+                <div class="holder-slider__info-title">23 Hours 5 Minutes</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Pricing</div>
-                <div class="travel-slider__info-title">$1,976 USD
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Pricing</div>
+                <div class="holder-slider__info-title">$1,976 USD
                   <span>Round Trip</span>
                 </div>
               </div>
             </div>
-            <div class="travel-slider__btn">
+            <div class="holder-slider__btn">
               <a href="#" class="btn">
                 book <span>flight</span>
               </a>
             </div>
 
           </div>
-          <div class="travel__slider-item travel-slider">
-            <div class="travel-slider__head" style="background-image: url(../img/travel-image.png);">
-              <div class="travel-slider__subtitle">
+          <div class="holder__slider-item holder-slider">
+            <div class="holder-slider__head" style="background-image: url(../img/travel-image.png);">
+              <div class="holder-slider__subtitle">
                 <div class="subtitle">
                   <div class="headline-left">Shore</div>
                   <div class="subtitle__head">Airlie Beach <span>|</span> Australia</div>
                 </div>
               </div>
             </div>
-            <div class="travel-slider__descr" style="background-image: url(../img/virgin-airplane.png);">
+            <div class="holder-slider__descr" style="background-image: url(../img/virgin-airplane.png);">
 
 
               <div class=" descr">
@@ -675,43 +1008,43 @@
                 <div class="descr__head">Virgin Australia <img src="img/virgin-logo.svg" alt="virgin-logo"></div>
               </div>
             </div>
-            <div class="travel-slider__info">
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Destination</div>
-                <div class="travel-slider__info-title">Queensland Australia</div>
+            <div class="holder-slider__info">
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Destination</div>
+                <div class="holder-slider__info-title">Queensland Australia</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Distance</div>
-                <div class="travel-slider__info-title">7,065 Miles</div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Distance</div>
+                <div class="holder-slider__info-title">7,065 Miles</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Travel Time</div>
-                <div class="travel-slider__info-title">23 Hours 5 Minutes</div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Travel Time</div>
+                <div class="holder-slider__info-title">23 Hours 5 Minutes</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Pricing</div>
-                <div class="travel-slider__info-title">$1,976 USD
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Pricing</div>
+                <div class="holder-slider__info-title">$1,976 USD
                   <span>Round Trip</span>
                 </div>
               </div>
             </div>
-            <div class="travel-slider__btn">
+            <div class="holder-slider__btn">
               <a href="#" class="btn">
                 book <span>flight</span>
               </a>
             </div>
 
           </div>
-          <div class="travel__slider-item travel-slider">
-            <div class="travel-slider__head" style="background-image: url(../img/travel-image.png);">
-              <div class="travel-slider__subtitle">
+          <div class="holder__slider-item holder-slider">
+            <div class="holder-slider__head" style="background-image: url(../img/travel-image.png);">
+              <div class="holder-slider__subtitle">
                 <div class="subtitle">
                   <div class="headline-left">Shore</div>
                   <div class="subtitle__head">Airlie Beach <span>|</span> Australia</div>
                 </div>
               </div>
             </div>
-            <div class="travel-slider__descr" style="background-image: url(../img/virgin-airplane.png);">
+            <div class="holder-slider__descr" style="background-image: url(../img/virgin-airplane.png);">
 
 
               <div class=" descr">
@@ -719,43 +1052,43 @@
                 <div class="descr__head">Virgin Australia <img src="img/virgin-logo.svg" alt="virgin-logo"></div>
               </div>
             </div>
-            <div class="travel-slider__info">
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Destination</div>
-                <div class="travel-slider__info-title">Queensland Australia</div>
+            <div class="holder-slider__info">
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Destination</div>
+                <div class="holder-slider__info-title">Queensland Australia</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Distance</div>
-                <div class="travel-slider__info-title">7,065 Miles</div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Distance</div>
+                <div class="holder-slider__info-title">7,065 Miles</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Travel Time</div>
-                <div class="travel-slider__info-title">23 Hours 5 Minutes</div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Travel Time</div>
+                <div class="holder-slider__info-title">23 Hours 5 Minutes</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Pricing</div>
-                <div class="travel-slider__info-title">$1,976 USD
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Pricing</div>
+                <div class="holder-slider__info-title">$1,976 USD
                   <span>Round Trip</span>
                 </div>
               </div>
             </div>
-            <div class="travel-slider__btn">
+            <div class="holder-slider__btn">
               <a href="#" class="btn">
                 book <span>flight</span>
               </a>
             </div>
 
           </div>
-          <div class="travel__slider-item travel-slider">
-            <div class="travel-slider__head" style="background-image: url(../img/travel-image.png);">
-              <div class="travel-slider__subtitle">
+          <div class="holder__slider-item holder-slider">
+            <div class="holder-slider__head" style="background-image: url(../img/travel-image.png);">
+              <div class="holder-slider__subtitle">
                 <div class="subtitle">
                   <div class="headline-left">Shore</div>
                   <div class="subtitle__head">Airlie Beach <span>|</span> Australia</div>
                 </div>
               </div>
             </div>
-            <div class="travel-slider__descr" style="background-image: url(../img/virgin-airplane.png);">
+            <div class="holder-slider__descr" style="background-image: url(../img/virgin-airplane.png);">
 
 
               <div class=" descr">
@@ -763,43 +1096,43 @@
                 <div class="descr__head">Virgin Australia <img src="img/virgin-logo.svg" alt="virgin-logo"></div>
               </div>
             </div>
-            <div class="travel-slider__info">
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Destination</div>
-                <div class="travel-slider__info-title">Queensland Australia</div>
+            <div class="holder-slider__info">
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Destination</div>
+                <div class="holder-slider__info-title">Queensland Australia</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Distance</div>
-                <div class="travel-slider__info-title">7,065 Miles</div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Distance</div>
+                <div class="holder-slider__info-title">7,065 Miles</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Travel Time</div>
-                <div class="travel-slider__info-title">23 Hours 5 Minutes</div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Travel Time</div>
+                <div class="holder-slider__info-title">23 Hours 5 Minutes</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Pricing</div>
-                <div class="travel-slider__info-title">$1,976 USD
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Pricing</div>
+                <div class="holder-slider__info-title">$1,976 USD
                   <span>Round Trip</span>
                 </div>
               </div>
             </div>
-            <div class="travel-slider__btn">
+            <div class="holder-slider__btn">
               <a href="#" class="btn">
                 book <span>flight</span>
               </a>
             </div>
 
           </div>
-          <div class="travel__slider-item travel-slider">
-            <div class="travel-slider__head" style="background-image: url(../img/travel-image.png);">
-              <div class="travel-slider__subtitle">
+          <div class="holder__slider-item holder-slider">
+            <div class="holder-slider__head" style="background-image: url(../img/travel-image.png);">
+              <div class="holder-slider__subtitle">
                 <div class="subtitle">
                   <div class="headline-left">Shore</div>
                   <div class="subtitle__head">Airlie Beach <span>|</span> Australia</div>
                 </div>
               </div>
             </div>
-            <div class="travel-slider__descr" style="background-image: url(../img/virgin-airplane.png);">
+            <div class="holder-slider__descr" style="background-image: url(../img/virgin-airplane.png);">
 
 
               <div class=" descr">
@@ -807,43 +1140,43 @@
                 <div class="descr__head">Virgin Australia <img src="img/virgin-logo.svg" alt="virgin-logo"></div>
               </div>
             </div>
-            <div class="travel-slider__info">
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Destination</div>
-                <div class="travel-slider__info-title">Queensland Australia</div>
+            <div class="holder-slider__info">
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Destination</div>
+                <div class="holder-slider__info-title">Queensland Australia</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Distance</div>
-                <div class="travel-slider__info-title">7,065 Miles</div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Distance</div>
+                <div class="holder-slider__info-title">7,065 Miles</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Travel Time</div>
-                <div class="travel-slider__info-title">23 Hours 5 Minutes</div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Travel Time</div>
+                <div class="holder-slider__info-title">23 Hours 5 Minutes</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Pricing</div>
-                <div class="travel-slider__info-title">$1,976 USD
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Pricing</div>
+                <div class="holder-slider__info-title">$1,976 USD
                   <span>Round Trip</span>
                 </div>
               </div>
             </div>
-            <div class="travel-slider__btn">
+            <div class="holder-slider__btn">
               <a href="#" class="btn">
                 book <span>flight</span>
               </a>
             </div>
 
           </div>
-          <div class="travel__slider-item travel-slider">
-            <div class="travel-slider__head" style="background-image: url(../img/travel-image.png);">
-              <div class="travel-slider__subtitle">
+          <div class="holder__slider-item holder-slider">
+            <div class="holder-slider__head" style="background-image: url(../img/travel-image.png);">
+              <div class="holder-slider__subtitle">
                 <div class="subtitle">
                   <div class="headline-left">Shore</div>
                   <div class="subtitle__head">Airlie Beach <span>|</span> Australia</div>
                 </div>
               </div>
             </div>
-            <div class="travel-slider__descr" style="background-image: url(../img/virgin-airplane.png);">
+            <div class="holder-slider__descr" style="background-image: url(../img/virgin-airplane.png);">
 
 
               <div class=" descr">
@@ -851,43 +1184,43 @@
                 <div class="descr__head">Virgin Australia <img src="img/virgin-logo.svg" alt="virgin-logo"></div>
               </div>
             </div>
-            <div class="travel-slider__info">
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Destination</div>
-                <div class="travel-slider__info-title">Queensland Australia</div>
+            <div class="holder-slider__info">
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Destination</div>
+                <div class="holder-slider__info-title">Queensland Australia</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Distance</div>
-                <div class="travel-slider__info-title">7,065 Miles</div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Distance</div>
+                <div class="holder-slider__info-title">7,065 Miles</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Travel Time</div>
-                <div class="travel-slider__info-title">23 Hours 5 Minutes</div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Travel Time</div>
+                <div class="holder-slider__info-title">23 Hours 5 Minutes</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Pricing</div>
-                <div class="travel-slider__info-title">$1,976 USD
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Pricing</div>
+                <div class="holder-slider__info-title">$1,976 USD
                   <span>Round Trip</span>
                 </div>
               </div>
             </div>
-            <div class="travel-slider__btn">
+            <div class="holder-slider__btn">
               <a href="#" class="btn">
                 book <span>flight</span>
               </a>
             </div>
 
           </div>
-          <div class="travel__slider-item travel-slider">
-            <div class="travel-slider__head" style="background-image: url(../img/travel-image.png);">
-              <div class="travel-slider__subtitle">
+          <div class="holder__slider-item holder-slider">
+            <div class="holder-slider__head" style="background-image: url(../img/travel-image.png);">
+              <div class="holder-slider__subtitle">
                 <div class="subtitle">
                   <div class="headline-left">Shore</div>
                   <div class="subtitle__head">Airlie Beach <span>|</span> Australia</div>
                 </div>
               </div>
             </div>
-            <div class="travel-slider__descr" style="background-image: url(../img/virgin-airplane.png);">
+            <div class="holder-slider__descr" style="background-image: url(../img/virgin-airplane.png);">
 
 
               <div class=" descr">
@@ -895,43 +1228,43 @@
                 <div class="descr__head">Virgin Australia <img src="img/virgin-logo.svg" alt="virgin-logo"></div>
               </div>
             </div>
-            <div class="travel-slider__info">
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Destination</div>
-                <div class="travel-slider__info-title">Queensland Australia</div>
+            <div class="holder-slider__info">
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Destination</div>
+                <div class="holder-slider__info-title">Queensland Australia</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Distance</div>
-                <div class="travel-slider__info-title">7,065 Miles</div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Distance</div>
+                <div class="holder-slider__info-title">7,065 Miles</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Travel Time</div>
-                <div class="travel-slider__info-title">23 Hours 5 Minutes</div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Travel Time</div>
+                <div class="holder-slider__info-title">23 Hours 5 Minutes</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Pricing</div>
-                <div class="travel-slider__info-title">$1,976 USD
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Pricing</div>
+                <div class="holder-slider__info-title">$1,976 USD
                   <span>Round Trip</span>
                 </div>
               </div>
             </div>
-            <div class="travel-slider__btn">
+            <div class="holder-slider__btn">
               <a href="#" class="btn">
                 book <span>flight</span>
               </a>
             </div>
 
           </div>
-          <div class="travel__slider-item travel-slider">
-            <div class="travel-slider__head" style="background-image: url(../img/travel-image.png);">
-              <div class="travel-slider__subtitle">
+          <div class="holder__slider-item holder-slider">
+            <div class="holder-slider__head" style="background-image: url(../img/travel-image.png);">
+              <div class="holder-slider__subtitle">
                 <div class="subtitle">
                   <div class="headline-left">Shore</div>
                   <div class="subtitle__head">Airlie Beach <span>|</span> Australia</div>
                 </div>
               </div>
             </div>
-            <div class="travel-slider__descr" style="background-image: url(../img/virgin-airplane.png);">
+            <div class="holder-slider__descr" style="background-image: url(../img/virgin-airplane.png);">
 
 
               <div class=" descr">
@@ -939,27 +1272,27 @@
                 <div class="descr__head">Virgin Australia <img src="img/virgin-logo.svg" alt="virgin-logo"></div>
               </div>
             </div>
-            <div class="travel-slider__info">
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Destination</div>
-                <div class="travel-slider__info-title">Queensland Australia</div>
+            <div class="holder-slider__info">
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Destination</div>
+                <div class="holder-slider__info-title">Queensland Australia</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Distance</div>
-                <div class="travel-slider__info-title">7,065 Miles</div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Distance</div>
+                <div class="holder-slider__info-title">7,065 Miles</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Travel Time</div>
-                <div class="travel-slider__info-title">23 Hours 5 Minutes</div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Travel Time</div>
+                <div class="holder-slider__info-title">23 Hours 5 Minutes</div>
               </div>
-              <div class="travel-slider__info-item">
-                <div class="travel-slider__info-subtitle">Pricing</div>
-                <div class="travel-slider__info-title">$1,976 USD
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Pricing</div>
+                <div class="holder-slider__info-title">$1,976 USD
                   <span>Round Trip</span>
                 </div>
               </div>
             </div>
-            <div class="travel-slider__btn">
+            <div class="holder-slider__btn">
               <a href="#" class="btn">
                 book <span>flight</span>
               </a>
@@ -969,26 +1302,770 @@
         </div>
       </div>
     </section>
-    <section class="sleep">
-      <div class="title">
-        <span>
-          sleep
-          <h3>sleep</h3>
-        </span>
+    <section class="holder sleep">
+      <div class="container">
+        <div class="title">
+          <span>
+            sleep
+            <h3>sleep</h3>
+          </span>
+        </div>
+        <div class="holder__slider">
+          <div class="holder__slider-item holder-slider">
+            <div class="holder-slider__head" style="background-image: url(../img/sleep-bg.png);">
+              <div class="holder-slider__subtitle">
+                <div class="subtitle">
+                  <div class="headline-left">Resorts</div>
+                  <div class="subtitle__head">Auberge<span>|</span> Australia</div>
+                </div>
+              </div>
+            </div>
+            <div class="holder-slider__descr" style="background-image: url(../img/sunnyrelax.png);">
+
+
+              <div class=" descr">
+                <div class="headline-right">Rating</div>
+                <div class="descr__head">Excellent</div>
+                <ul class='holder__star-list'>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="holder-slider__info">
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Resort</div>
+                <div class="holder-slider__info-title">Auberge Australia</div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle"># of Nights</div>
+                <div class="holder-slider__info-title">
+                  <div class="quantity">
+                    <input class="nights" type="number" min="1" max="99" step="1" value="5">
+                  </div>
+                  Nights
+                </div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle"># of Guests</div>
+                <div class="holder-slider__info-title">
+                  <div class="quantity">
+                    <input class="guests" type="number" min="1" max="99" step="1" value="4">
+                  </div> Guests
+                </div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Pricing</div>
+                <div class="holder-slider__info-title">
+                  <div class="sum" data-nights="55" data-guests="25"></div>
+                  <span>Per Night</span>
+                </div>
+              </div>
+            </div>
+            <div class="holder-slider__btn">
+              <a href="#" class="btn">
+                book <span>flight</span>
+              </a>
+            </div>
+          </div>
+          <div class="holder__slider-item holder-slider">
+            <div class="holder-slider__head" style="background-image: url(../img/sleep-bg.png);">
+              <div class="holder-slider__subtitle">
+                <div class="subtitle">
+                  <div class="headline-left">Resorts</div>
+                  <div class="subtitle__head">Auberge<span>|</span> Australia</div>
+                </div>
+              </div>
+            </div>
+            <div class="holder-slider__descr" style="background-image: url(../img/sunnyrelax.png);">
+
+
+              <div class=" descr">
+                <div class="headline-right">Rating</div>
+                <div class="descr__head">Excellent</div>
+                <ul class='holder__star-list'>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="holder-slider__info">
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Resort</div>
+                <div class="holder-slider__info-title">Auberge Australia</div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle"># of Nights</div>
+                <div class="holder-slider__info-title">
+                  <div class="quantity">
+                    <input class="nights" type="number" min="1" max="99" step="1" value="5">
+                  </div>
+                  Nights
+                </div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle"># of Guests</div>
+                <div class="holder-slider__info-title">
+                  <div class="quantity">
+                    <input class="guests" type="number" min="1" max="99" step="1" value="4">
+                  </div> Guests
+                </div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Pricing</div>
+                <div class="holder-slider__info-title">
+                  <div class="sum" data-nights="55" data-guests="25"></div>
+                  <span>Per Night</span>
+                </div>
+              </div>
+            </div>
+            <div class="holder-slider__btn">
+              <a href="#" class="btn">
+                book <span>flight</span>
+              </a>
+            </div>
+          </div>
+          <div class="holder__slider-item holder-slider">
+            <div class="holder-slider__head" style="background-image: url(../img/sleep-bg.png);">
+              <div class="holder-slider__subtitle">
+                <div class="subtitle">
+                  <div class="headline-left">Resorts</div>
+                  <div class="subtitle__head">Auberge<span>|</span> Australia</div>
+                </div>
+              </div>
+            </div>
+            <div class="holder-slider__descr" style="background-image: url(../img/sunnyrelax.png);">
+
+
+              <div class=" descr">
+                <div class="headline-right">Rating</div>
+                <div class="descr__head">Excellent</div>
+                <ul class='holder__star-list'>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="holder-slider__info">
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Resort</div>
+                <div class="holder-slider__info-title">Auberge Australia</div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle"># of Nights</div>
+                <div class="holder-slider__info-title">
+                  <div class="quantity">
+                    <input class="nights" type="number" min="1" max="99" step="1" value="5">
+                  </div>
+                  Nights
+                </div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle"># of Guests</div>
+                <div class="holder-slider__info-title">
+                  <div class="quantity">
+                    <input class="guests" type="number" min="1" max="99" step="1" value="4">
+                  </div> Guests
+                </div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Pricing</div>
+                <div class="holder-slider__info-title">
+                  <div class="sum" data-nights="55" data-guests="25"></div>
+                  <span>Per Night</span>
+                </div>
+              </div>
+            </div>
+            <div class="holder-slider__btn">
+              <a href="#" class="btn">
+                book <span>flight</span>
+              </a>
+            </div>
+          </div>
+          <div class="holder__slider-item holder-slider">
+            <div class="holder-slider__head" style="background-image: url(../img/sleep-bg.png);">
+              <div class="holder-slider__subtitle">
+                <div class="subtitle">
+                  <div class="headline-left">Resorts</div>
+                  <div class="subtitle__head">Auberge<span>|</span> Australia</div>
+                </div>
+              </div>
+            </div>
+            <div class="holder-slider__descr" style="background-image: url(../img/sunnyrelax.png);">
+
+
+              <div class=" descr">
+                <div class="headline-right">Rating</div>
+                <div class="descr__head">Excellent</div>
+                <ul class='holder__star-list'>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="holder-slider__info">
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Resort</div>
+                <div class="holder-slider__info-title">Auberge Australia</div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle"># of Nights</div>
+                <div class="holder-slider__info-title">
+                  <div class="quantity">
+                    <input class="nights" type="number" min="1" max="99" step="1" value="5">
+                  </div>
+                  Nights
+                </div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle"># of Guests</div>
+                <div class="holder-slider__info-title">
+                  <div class="quantity">
+                    <input class="guests" type="number" min="1" max="99" step="1" value="4">
+                  </div> Guests
+                </div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Pricing</div>
+                <div class="holder-slider__info-title">
+                  <div class="sum" data-nights="55" data-guests="25"></div>
+                  <span>Per Night</span>
+                </div>
+              </div>
+            </div>
+            <div class="holder-slider__btn">
+              <a href="#" class="btn">
+                book <span>flight</span>
+              </a>
+            </div>
+          </div>
+          <div class="holder__slider-item holder-slider">
+            <div class="holder-slider__head" style="background-image: url(../img/sleep-bg.png);">
+              <div class="holder-slider__subtitle">
+                <div class="subtitle">
+                  <div class="headline-left">Resorts</div>
+                  <div class="subtitle__head">Auberge<span>|</span> Australia</div>
+                </div>
+              </div>
+            </div>
+            <div class="holder-slider__descr" style="background-image: url(../img/sunnyrelax.png);">
+
+
+              <div class=" descr">
+                <div class="headline-right">Rating</div>
+                <div class="descr__head">Excellent</div>
+                <ul class='holder__star-list'>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="holder-slider__info">
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Resort</div>
+                <div class="holder-slider__info-title">Auberge Australia</div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle"># of Nights</div>
+                <div class="holder-slider__info-title">
+                  <div class="quantity">
+                    <input class="nights" type="number" min="1" max="99" step="1" value="5">
+                  </div>
+                  Nights
+                </div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle"># of Guests</div>
+                <div class="holder-slider__info-title">
+                  <div class="quantity">
+                    <input class="guests" type="number" min="1" max="99" step="1" value="4">
+                  </div> Guests
+                </div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Pricing</div>
+                <div class="holder-slider__info-title">
+                  <div class="sum" data-nights="55" data-guests="25"></div>
+                  <span>Per Night</span>
+                </div>
+              </div>
+            </div>
+            <div class="holder-slider__btn">
+              <a href="#" class="btn">
+                book <span>flight</span>
+              </a>
+            </div>
+          </div>
+          <div class="holder__slider-item holder-slider">
+            <div class="holder-slider__head" style="background-image: url(../img/sleep-bg.png);">
+              <div class="holder-slider__subtitle">
+                <div class="subtitle">
+                  <div class="headline-left">Resorts</div>
+                  <div class="subtitle__head">Auberge<span>|</span> Australia</div>
+                </div>
+              </div>
+            </div>
+            <div class="holder-slider__descr" style="background-image: url(../img/sunnyrelax.png);">
+
+
+              <div class=" descr">
+                <div class="headline-right">Rating</div>
+                <div class="descr__head">Excellent</div>
+                <ul class='holder__star-list'>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="holder-slider__info">
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Resort</div>
+                <div class="holder-slider__info-title">Auberge Australia</div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle"># of Nights</div>
+                <div class="holder-slider__info-title">
+                  <div class="quantity">
+                    <input class="nights" type="number" min="1" max="99" step="1" value="5">
+                  </div>
+                  Nights
+                </div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle"># of Guests</div>
+                <div class="holder-slider__info-title">
+                  <div class="quantity">
+                    <input class="guests" type="number" min="1" max="99" step="1" value="4">
+                  </div> Guests
+                </div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Pricing</div>
+                <div class="holder-slider__info-title">
+                  <div class="sum" data-nights="55" data-guests="25"></div>
+                  <span>Per Night</span>
+                </div>
+              </div>
+            </div>
+            <div class="holder-slider__btn">
+              <a href="#" class="btn">
+                book <span>flight</span>
+              </a>
+            </div>
+          </div>
+          <div class="holder__slider-item holder-slider">
+            <div class="holder-slider__head" style="background-image: url(../img/sleep-bg.png);">
+              <div class="holder-slider__subtitle">
+                <div class="subtitle">
+                  <div class="headline-left">Resorts</div>
+                  <div class="subtitle__head">Auberge<span>|</span> Australia</div>
+                </div>
+              </div>
+            </div>
+            <div class="holder-slider__descr" style="background-image: url(../img/sunnyrelax.png);">
+
+
+              <div class=" descr">
+                <div class="headline-right">Rating</div>
+                <div class="descr__head">Excellent</div>
+                <ul class='holder__star-list'>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="holder-slider__info">
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Resort</div>
+                <div class="holder-slider__info-title">Auberge Australia</div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle"># of Nights</div>
+                <div class="holder-slider__info-title">
+                  <div class="quantity">
+                    <input class="nights" type="number" min="1" max="99" step="1" value="5">
+                  </div>
+                  Nights
+                </div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle"># of Guests</div>
+                <div class="holder-slider__info-title">
+                  <div class="quantity">
+                    <input class="guests" type="number" min="1" max="99" step="1" value="4">
+                  </div> Guests
+                </div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Pricing</div>
+                <div class="holder-slider__info-title">
+                  <div class="sum" data-nights="55" data-guests="25"></div>
+                  <span>Per Night</span>
+                </div>
+              </div>
+            </div>
+            <div class="holder-slider__btn">
+              <a href="#" class="btn">
+                book <span>flight</span>
+              </a>
+            </div>
+          </div>
+          <div class="holder__slider-item holder-slider">
+            <div class="holder-slider__head" style="background-image: url(../img/sleep-bg.png);">
+              <div class="holder-slider__subtitle">
+                <div class="subtitle">
+                  <div class="headline-left">Resorts</div>
+                  <div class="subtitle__head">Auberge<span>|</span> Australia</div>
+                </div>
+              </div>
+            </div>
+            <div class="holder-slider__descr" style="background-image: url(../img/sunnyrelax.png);">
+
+
+              <div class=" descr">
+                <div class="headline-right">Rating</div>
+                <div class="descr__head">Excellent</div>
+                <ul class='holder__star-list'>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                  <li><img src="img/star.svg" alt="star-logo"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="holder-slider__info">
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Resort</div>
+                <div class="holder-slider__info-title">Auberge Australia</div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle"># of Nights</div>
+                <div class="holder-slider__info-title">
+                  <div class="quantity">
+                    <input class="nights" type="number" min="1" max="99" step="1" value="5">
+                  </div>
+                  Nights
+                </div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle"># of Guests</div>
+                <div class="holder-slider__info-title">
+                  <div class="quantity">
+                    <input class="guests" type="number" min="1" max="99" step="1" value="4">
+                  </div> Guests
+                </div>
+              </div>
+              <div class="holder-slider__info-item">
+                <div class="holder-slider__info-subtitle">Pricing</div>
+                <div class="holder-slider__info-title">
+                  <div class="sum" data-nights="55" data-guests="25"></div>
+                  <span>Per Night</span>
+                </div>
+              </div>
+            </div>
+            <div class="holder-slider__btn">
+              <a href="#" class="btn">
+                book <span>flight</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
     <section class="shop">
-      <div class="title">
-        <span>
-          Shop
-          <h3>Shop</h3>
-        </span>
+      <div class="container">
+        <div class="title">
+          <span>
+            Shop
+            <h3>Shop</h3>
+          </span>
+        </div>
+        <div class="shop__slider">
+          <div class="shop__slider-item">
+            <div class="shop__slider-inner">
+              <div class="shop__slider-info">
+                <div class="descr">
+                  <div class="headline-right">Style</div>
+                  <div class="descr__head descr__head-shop">
+                    North Nugget TT
+                    Surfboard
+                  </div>
+
+                </div>
+                <div class="shop__slider-price">
+                  <ul class="holder__star-list star-list">
+                    <li><img src="img/star.svg" alt="star-icon"></li>
+                    <li><img src="img/star.svg" alt="star-icon"></li>
+                    <li><img src="img/star.svg" alt="star-icon"></li>
+                    <li><img src="img/star.svg" alt="star-icon"></li>
+                    <li><img src="img/star.svg" alt="star-icon"></li>
+                  </ul>
+                  $799<sup>99</sup>
+                </div>
+                <div class="shop__slider-btn">
+                  <a href="#" class="btn">
+                    Drop <span>in</span>
+                  </a>
+                </div>
+              </div>
+              <div class="shop__slider-content">
+                <div class="surfboard">
+                  <img src="img/surfboard.png" alt="surfboard">
+                  <div class="surfboard-box surfboard-pos-1">
+                    <div class="surfboard-box__circle">
+                      <div class="circle-row"></div>
+                      <div class="circle-row"></div>
+                    </div>
+                    <div class="surfboard-box__content">Double Concave with
+                      Vee Shape low pointc</div>
+                  </div>
+                  <div class="surfboard-box surfboard-pos-2">
+                    <div class="surfboard-box__circle">
+                      <div class="circle-row"></div>
+                      <div class="circle-row"></div>
+                    </div>
+                    <div class="surfboard-box__content">Double Concave with
+                      Vee Shape low pointc</div>
+                  </div>
+                  <div class="surfboard-box surfboard-pos-3">
+                    <div class="surfboard-box__circle">
+                      <div class="circle-row"></div>
+                      <div class="circle-row"></div>
+                    </div>
+                    <div class="surfboard-box__content">Double Concave with
+                      Vee Shape low pointc</div>
+                  </div>
+
+                </div>
+                <div class="shop__extras">
+                  <div class="shop__extras-title">
+                    Extras
+                  </div>
+                  <div class="shop__extras-inner">
+                    <div class="shop__extras-box">
+                      <div class="shop__extras-img">
+                        <img src="img/wax.png" alt="wax">
+                      </div>
+
+                      <div class="shop__extras-name">Sex Wax</div>
+                      <div class="shop__extras-price">$24.99</div>
+                    </div>
+                    <div class="shop__extras-box">
+                      <div class="shop__extras-img">
+                        <img src="img/bracelet.png" alt="bracelet">
+                      </div>
+                      <div class="shop__extras-name">Pura Vida</div>
+                      <div class="shop__extras-price">$27.99</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shop__slider-item">
+            <div class="shop__slider-inner">
+              <div class="shop__slider-info">
+                <div class="descr">
+                  <div class="headline-right">Style</div>
+                  <div class="descr__head descr__head-shop">
+                    North Nugget TT
+                    Surfboard
+                  </div>
+
+                </div>
+                <div class="shop__slider-price">
+                  <ul class="holder__star-list star-list">
+                    <li><img src="img/star.svg" alt="star-icon"></li>
+                    <li><img src="img/star.svg" alt="star-icon"></li>
+                    <li><img src="img/star.svg" alt="star-icon"></li>
+                    <li><img src="img/star.svg" alt="star-icon"></li>
+                    <li><img src="img/star.svg" alt="star-icon"></li>
+                  </ul>
+                  $799<sup>99</sup>
+                </div>
+                <div class="shop__slider-btn">
+                  <a href="#" class="btn">
+                    Drop <span>in</span>
+                  </a>
+                </div>
+              </div>
+              <div class="shop__slider-content">
+                <div class="surfboard">
+                  <img src="img/surfboard.png" alt="surfboard">
+                  <div class="surfboard-box surfboard-pos-1">
+                    <div class="surfboard-box__circle">
+                      <div class="circle-row"></div>
+                      <div class="circle-row"></div>
+                    </div>
+                    <div class="surfboard-box__content">Double Concave with
+                      Vee Shape low pointc</div>
+                  </div>
+                  <div class="surfboard-box surfboard-pos-2">
+                    <div class="surfboard-box__circle">
+                      <div class="circle-row"></div>
+                      <div class="circle-row"></div>
+                    </div>
+                    <div class="surfboard-box__content">Double Concave with
+                      Vee Shape low pointc</div>
+                  </div>
+                  <div class="surfboard-box surfboard-pos-3">
+                    <div class="surfboard-box__circle">
+                      <div class="circle-row"></div>
+                      <div class="circle-row"></div>
+                    </div>
+                    <div class="surfboard-box__content">Double Concave with
+                      Vee Shape low pointc</div>
+                  </div>
+
+                </div>
+                <div class="shop__extras">
+                  <div class="shop__extras-title">
+                    Extras
+                  </div>
+                  <div class="shop__extras-inner">
+                    <div class="shop__extras-box">
+                      <div class="shop__extras-img">
+                        <img src="img/wax.png" alt="wax">
+                      </div>
+
+                      <div class="shop__extras-name">Sex Wax</div>
+                      <div class="shop__extras-price">$24.99</div>
+                    </div>
+                    <div class="shop__extras-box">
+                      <div class="shop__extras-img">
+                        <img src="img/bracelet.png" alt="bracelet">
+                      </div>
+                      <div class="shop__extras-name">Pura Vida</div>
+                      <div class="shop__extras-price">$27.99</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shop__slider-item">
+            <div class="shop__slider-inner">
+              <div class="shop__slider-info">
+                <div class="descr">
+                  <div class="headline-right">Style</div>
+                  <div class="descr__head descr__head-shop">
+                    North Nugget TT
+                    Surfboard
+                  </div>
+
+                </div>
+                <div class="shop__slider-price">
+                  <ul class="holder__star-list star-list">
+                    <li><img src="img/star.svg" alt="star-icon"></li>
+                    <li><img src="img/star.svg" alt="star-icon"></li>
+                    <li><img src="img/star.svg" alt="star-icon"></li>
+                    <li><img src="img/star.svg" alt="star-icon"></li>
+                    <li><img src="img/star.svg" alt="star-icon"></li>
+                  </ul>
+                  $799<sup>99</sup>
+                </div>
+                <div class="shop__slider-btn">
+                  <a href="#" class="btn">
+                    Drop <span>in</span>
+                  </a>
+                </div>
+              </div>
+              <div class="shop__slider-content">
+                <div class="surfboard">
+                  <img src="img/surfboard.png" alt="surfboard">
+                  <div class="surfboard-box surfboard-pos-1">
+                    <div class="surfboard-box__circle">
+                      <div class="circle-row"></div>
+                      <div class="circle-row"></div>
+                    </div>
+                    <div class="surfboard-box__content">Double Concave with
+                      Vee Shape low pointc</div>
+                  </div>
+                  <div class="surfboard-box surfboard-pos-2">
+                    <div class="surfboard-box__circle">
+                      <div class="circle-row"></div>
+                      <div class="circle-row"></div>
+                    </div>
+                    <div class="surfboard-box__content">Double Concave with
+                      Vee Shape low pointc</div>
+                  </div>
+                  <div class="surfboard-box surfboard-pos-3">
+                    <div class="surfboard-box__circle">
+                      <div class="circle-row"></div>
+                      <div class="circle-row"></div>
+                    </div>
+                    <div class="surfboard-box__content">Double Concave with
+                      Vee Shape low pointc</div>
+                  </div>
+
+                </div>
+                <div class="shop__extras">
+                  <div class="shop__extras-title">
+                    Extras
+                  </div>
+                  <div class="shop__extras-inner">
+                    <div class="shop__extras-box">
+                      <div class="shop__extras-img">
+                        <img src="img/wax.png" alt="wax">
+                      </div>
+
+                      <div class="shop__extras-name">Sex Wax</div>
+                      <div class="shop__extras-price">$24.99</div>
+                    </div>
+                    <div class="shop__extras-box">
+                      <div class="shop__extras-img">
+                        <img src="img/bracelet.png" alt="bracelet">
+                      </div>
+                      <div class="shop__extras-name">Pura Vida</div>
+                      <div class="shop__extras-price">$27.99</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/libs.min.js"></script>
-  <script src="js/main.js"></script>
+    </section> -->
+    
+    
+    <!-- <footer class="footer">
+      <div class="shop__slider-btn">
+        <a href="#" class="btn">
+          go <span>surf</span>
+        </a>
+      </div>
+      <div class="footer__copy">
+        © Go-Surf 2018. All Rights Reserved.
+      </div>
+    </footer> -->
+  </div> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
